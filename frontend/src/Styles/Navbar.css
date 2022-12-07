@@ -1,0 +1,259 @@
+#header {
+  height: 15vh;
+  padding: 2rem;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  color: #333;
+
+  position: relative;
+}
+
+.brand {
+  color: #333;
+}
+
+#header .brand {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.brand span {
+  color: orange;
+}
+
+.toggle-menu {
+  font-size: 1.4rem;
+  color: rgb(142, 142, 142);
+  cursor: pointer;
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin: 3.2rem;
+  transform: translateY(-50%);
+  z-index: 5;
+
+  padding: 0.3rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(3px);
+  box-shadow: 2px 2px 8px 0px rgba(48, 48, 48, 0.2);
+}
+
+.header__nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(7px);
+  box-shadow: 0px 0px 8px 0px rgba(126, 126, 126, 0.4);
+  border-radius: 0 1rem 0 0;
+  height: 100vh;
+  width: 40%;
+  transform: translateX(-100%);
+  transition: 0.5s ease-in-out;
+  z-index: 4;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 4rem 3rem;
+}
+
+.nav-item {
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #666;
+  text-transform: capitalize;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.nav-item:first-child a {
+  color: #ffa500;
+}
+
+.nav-item:nth-child(2) a {
+  color: #555;
+}
+
+.nav-item button {
+  text-transform: capitalize;
+  padding: 0;
+  box-shadow: none;
+  font-weight: 400;
+  color: #666;
+}
+
+.nav-item:hover {
+  opacity: 0.6;
+}
+
+/* search restaurant */
+.header__search {
+  /* width: 340px; */
+  position: relative;
+}
+
+.header__search > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+
+  text-transform: capitalize;
+  padding: 0;
+  box-shadow: none;
+  font-weight: 400;
+  color: #666;
+}
+
+.header__search > button:hover {
+  opacity: 0.6;
+}
+
+.header__search-box {
+  position: absolute;
+  margin-top: 0.4rem;
+  /* width: inherit; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.4rem;
+  z-index: 2;
+}
+
+.header__search-box > div {
+  border-radius: 0.4rem;
+  padding: 1rem;
+  background-color: rgba(45, 45, 45, 0.8);
+  backdrop-filter: blur(5px);
+  width: 200px;
+}
+
+.header__select-location p,
+.header__select-restaurants p {
+  font-size: 1.2rem;
+  background-color: #ffa500;
+  border-radius: 0.4rem;
+  color: #fff;
+  padding: 0.4rem;
+  margin: 1rem 0;
+}
+
+.header__search-box > div p:first-child {
+  background-color: transparent;
+  border-bottom: 2px solid #fff;
+  border-radius: 0%;
+}
+
+.header__search-box > div p:not(:first-child) {
+  cursor: pointer;
+}
+
+.header__search-box > div p:not(:first-child):hover {
+  box-shadow: 2px 2px 8px 0px rgba(255, 255, 255, 0.1);
+}
+
+/* user tab */
+.user-tab {
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0px 0px 8px 0px rgba(126, 126, 126, 0.2);
+  padding: 0.4rem;
+  border-radius: 2rem;
+}
+
+.user-tab h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  color: #444;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.user-tab > h1 > i:first-child {
+  border-radius: 50%;
+  padding: 0.4rem;
+  background-color: rgba(255, 165, 0, 0.6);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  box-shadow: 0px 0px 8px 0px rgba(156, 156, 156, 0.6);
+}
+
+.user-tab > h1 > i:last-child {
+  font-weight: 400;
+  margin-left: -0.4rem;
+}
+
+.user-tab > div {
+  position: absolute;
+  margin-top: 0.8rem;
+  margin-left: -0.4rem;
+  border-radius: 0.4rem;
+  box-shadow: 0px 0px 8px 0px rgba(156, 156, 156, 0.6);
+  background-color: rgba(255, 182, 47, 0.4);
+  color: rgba(147, 95, 0, 0.8);
+  backdrop-filter: blur(7px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 180px;
+}
+
+.user-tab > div > p {
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 0.4rem 0;
+  text-align: center;
+  /* border-radius: 0.4rem 0.4rem 0 0; */
+}
+
+.user-tab > div > button {
+  box-shadow: none;
+  padding: 0;
+  background-color: #333;
+  color: #ccc;
+  padding: 0.4rem 0;
+  border-radius: 0 0 0.4rem 0.4rem;
+}
+
+.user-tab > div > button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* media query */
+/* @media screen and (max-width: 1200px) {
+
+} */
+
+@media screen and (max-width: 1024px) {
+  .header__nav {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+/* @media screen and (max-width: 768px) {
+ 
+} */
+
+/* @media screen and (max-width: 576px) {
+
+} */
+
+/* @media screen and (max-width: 480px) {
+}  */

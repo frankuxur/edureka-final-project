@@ -1,0 +1,145 @@
+/* main */
+.main__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  color: #333;
+}
+
+.main__info {
+  width: 560px;
+  align-self: flex-start;
+}
+
+.main__info h1 {
+  font-size: 5rem;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  line-height: 5rem;
+}
+
+.main__info p {
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: #888;
+  font-family: "Montserrat", sans-serif;
+}
+
+.main__img img {
+  width: 480px;
+  height: 480px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  box-shadow: 2px 2px 8px 0px rgba(156, 156, 156, 1);
+}
+
+.main__btns {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 2rem;
+}
+
+.main__btns button {
+  color: #333;
+  font-weight: 600;
+  text-transform: capitalize;
+  border: 1px solid #ffa500;
+  color: #ffa500;
+}
+
+.main__btns button:first-child {
+  background-color: #ffa500;
+  color: #ececec;
+}
+
+/* services */
+.services__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.service {
+  padding: 1.6rem 0 1.4rem;
+  color: #222;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 8px 0px orange;
+  box-shadow: 2px 2px 8px 0px rgba(48, 48, 48, 0.2);
+  text-align: center;
+}
+
+.service i {
+  font-size: 1.4rem;
+  color: #555;
+  border: 1px solid #eee;
+  border-radius: 50%;
+  padding: 0.4rem;
+  box-shadow: 2px 2px 8px 0px rgba(48, 48, 48, 0.2);
+}
+
+.service h3 {
+  padding-top: 1rem;
+}
+
+.service p {
+  padding: 0.2rem 0 1rem;
+}
+
+/* about */
+.about__container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;
+}
+
+.about__img img {
+  width: 360px;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 8px 0px rgba(156, 156, 156, 0.6);
+}
+
+.about__info {
+  width: 480px;
+}
+
+.about__info h1 {
+  font-size: 2.6rem;
+  color: #333;
+  font-weight: 400;
+}
+
+.about__info p {
+  color: #777;
+  font-size: 1.4rem;
+  font-family: "Lora", serif;
+  font-style: italic;
+}
+
+/* media query */
+@media screen and (max-width: 1200px) {
+  .service p {
+    padding: 0.2rem 2rem 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services__container {
+    flex-direction: column;
+  }
+
+  .about__img {
+    display: none;
+  }
+}
+
+/* @media screen and (max-width: 576px) {
+}
+
+@media screen and (max-width: 480px) {
+} */

@@ -1,0 +1,113 @@
+.footer {
+  padding: 2rem 0 4rem;
+  background-color: rgba(214, 214, 214, 0.2);
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer__links-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.3rem;
+}
+
+.footer__links-group h4 {
+  font-weight: 500;
+  color: #333;
+  margin-top: 0.8rem;
+}
+
+.footer__links-group a {
+  color: #666;
+}
+
+.socials h4 {
+  margin-bottom: 0.4rem;
+}
+
+.socials__links i {
+  margin-right: 0.4rem;
+  font-size: 1.2rem;
+  padding: 0.4rem;
+  color: #fff;
+  background-color: rgba(255, 165, 0, 0.8);
+  border-radius: 50%;
+  box-shadow: 2px 2px 8px 0px rgba(156, 156, 156, 0.8);
+  cursor: pointer;
+}
+
+.download-app {
+  margin-top: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+
+.download-app button {
+  width: 180px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1.2rem;
+  color: rgb(126, 126, 126);
+}
+
+.footer__options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer__options button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  color: #444;
+}
+
+.footer__container > h5 {
+  color: #333;
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+}
+
+/* media query */
+@media screen and (max-width: 1024px) {
+  .footer__container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer__head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,323 @@
+.filter {
+  padding: 3rem 0 6rem;
+}
+
+.filter__container > h1 {
+  color: #555;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.filter__container > h1 > i {
+  display: none;
+}
+
+.filter__components {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.filter__form {
+  padding: 1rem;
+  width: 320px;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 8px 0px rgba(156, 156, 156, 0.6);
+  position: relative;
+}
+
+.filter__reset-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  cursor: pointer;
+}
+
+.filter__reset-btn i {
+  padding: 0.2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: 2px solid rgba(255, 165, 0, 0.8);
+  color: rgba(255, 165, 0, 0.8);
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px 0px rgba(156, 156, 156, 0.8);
+}
+
+.filter__reset-btn p {
+  font-size: 0.8rem;
+  line-height: 10px;
+  font-weight: 500;
+  color: #ccc;
+}
+
+.filter__fields {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.filter__fields > label {
+  color: #ffa500;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.filter__fields select {
+  font-family: "Hind Madurai", sans-serif;
+  padding: 0.4rem;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: rgb(125, 125, 125);
+  background-color: #fff;
+  border-radius: 0.4rem;
+  box-shadow: 2px 2px 8px 0px rgba(156, 156, 156, 0.6);
+  cursor: pointer;
+}
+
+.filter__fields select option {
+  color: #ffa500;
+  background-color: #fff;
+}
+
+.filter__field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+
+  font-size: 1.2rem;
+}
+
+.filter__field-label {
+  color: rgba(85, 85, 85, 0.6);
+}
+
+.filter__form button {
+  width: 100%;
+  color: #fff;
+  background-color: rgba(255, 165, 0, 0.8);
+}
+
+.filter__cards {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter__card {
+  position: relative;
+  margin-bottom: 6rem;
+}
+
+.filter__card > img {
+  border-radius: 2rem;
+  height: 160px;
+  width: 360px;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+.filter__cards-info {
+  width: 180px;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 2px 2px 8px 0px rgba(156, 156, 156, 0.8);
+  background-color: rgba(180, 180, 180, 0.4);
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  bottom: -4rem;
+  left: 20rem;
+}
+
+.filter__cards-info > * {
+  display: inline;
+}
+
+.filter__card-rating {
+  position: absolute;
+  height: 48px;
+  width: 48px;
+  background-color: rgba(255, 165, 0, 0.6);
+  backdrop-filter: blur(5px);
+  color: #444;
+  box-shadow: 2px 2px 8px 0px rgba(255, 165, 0, 0.6);
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  top: -1rem;
+  left: -1rem;
+}
+
+.filter__cards-info p:nth-child(1) {
+  color: #333;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  margin-bottom: 0.4rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.2rem;
+}
+
+.filter__cards-info p:nth-child(2) {
+  color: #222;
+  font-weight: 100;
+  font-family: "Lora", serif;
+  font-style: italic;
+}
+
+.filter__cards-info p:nth-child(3) {
+  background-color: rgba(255, 165, 0, 0.6);
+  color: #333;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+  margin-top: 0.8rem;
+}
+
+.filter__card > button {
+  width: 80%;
+  position: absolute;
+  bottom: -2.8rem;
+  left: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: rgba(255, 165, 0, 1);
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.6rem;
+}
+
+.filter__card > button:hover {
+  background-color: rgb(237, 180, 73);
+}
+
+.no-result {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  color: #333;
+  margin: 4rem 0 0 10rem;
+}
+
+.no-result img {
+  width: 280px;
+}
+
+.no-result h2 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.no-result h3 {
+  font-weight: 300;
+  color: #777;
+}
+
+/* pagination */
+.pagination__buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+/* media query */
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 1024px) {
+  .filter__container {
+    width: 80%;
+  }
+
+  .filter__container > h1 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .filter__container > h1 > i {
+    display: block;
+  }
+
+  .filter__components {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .filter__card > img {
+    border-radius: 2rem;
+    height: 220px;
+  }
+
+  .filter__cards-info {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 2rem 2rem;
+    padding: 0.6rem;
+    position: absolute;
+    bottom: -0.2rem;
+    left: 0;
+  }
+
+  .filter__cards-info p:nth-child(2) {
+    display: none;
+  }
+
+  .filter__cards-info p:nth-child(3) {
+    background-color: rgba(248, 172, 32, 0.8);
+    border-radius: 0.4rem;
+    margin-top: 0;
+  }
+
+  .filter__card > button {
+    width: 120px;
+    position: absolute;
+    bottom: -3rem;
+    left: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    background-color: rgba(255, 165, 0, 1);
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+}
+
+@media screen and (max-width: 480px) {
+}

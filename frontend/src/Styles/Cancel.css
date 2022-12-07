@@ -1,0 +1,39 @@
+.cancel {
+  height: 70vh;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cancel__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cancel__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: #fff;
+  box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.4rem;
+}
+
+.cancel__content h2 {
+  padding: 0 1.4rem;
+  color: rgba(215, 37, 37, 0.8);
+}
+
+.cancel__content .back-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #555;
+  font-weight: 600;
+  border-radius: 0.4rem;
+  box-shadow: 2px 2px 8px 0px rgba(156, 156, 156, 0.6);
+  padding: 1.4rem;
+  cursor: pointer;
+}
